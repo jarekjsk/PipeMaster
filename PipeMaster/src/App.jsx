@@ -1,4 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar/Navbar';
+import { MainPage } from './pages/MainPage/MainPage';
+import { Serwis } from './pages/Serwis/Serwis';
+import { Contact } from './pages/Contact/Contact';
 
 
 function App() {
@@ -6,14 +10,16 @@ function App() {
 
   return (
     <Router>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
+           
+            <Route path="/" element={<MainPage/>} />
+            <Route path="/service" element={<Serwis/>} />
+            <Route path="/contact" element={<Contact/>} />
 
-            {/* <Route path="/" element={} /> */}
-            {/* <Route path="/" element={} /> */}
 
       </Routes>
-      {/* <Footer /> */}
+      {/* <Footer />  */}
     </Router>
   )
 }

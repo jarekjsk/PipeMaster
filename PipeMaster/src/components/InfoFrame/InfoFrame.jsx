@@ -7,7 +7,7 @@ export function InfoFrame({img, title, text, btnname1, btnrout1, btnname2, btnro
     return (
         <article className={`${styles.main_article}  ${img ? styles.border_none : ''}`}>
                 {img && (<img src={img} alt="image" />)}
-                <h1 className={styles.main_title}>{title}</h1>
+                <h2 className={styles.main_title}>{title}</h2>
                 <p className={styles.main_text}>{text}</p>
                 <div className={styles.main_buttons}>
                     { btnname1 && btnrout1 && (

@@ -1,7 +1,9 @@
+
 .main_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 50px 0;
 }
 
@@ -18,6 +20,78 @@
     border-image-repeat: stretch;
 }
 
+
+.service_article {
+    max-width: 750px;
+    margin: 20px 20px;
+    border: 1px solid var(--accent-200);
+    border-radius: 25px;
+    padding: 20px 50px;
+    position: relative;
+    background-color: white;
+}
+
+.service_article::before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    left: -6%;
+    width: 300px;
+    height: 200px;
+    background-color: var(--bg-100);
+    border-radius: 20px;
+    z-index: -6;
+}
+
+
+
+.service_text {
+    font-size: 1.4rem;
+    color: var(--secondary-font-color);
+    line-height: 1.3rem;
+    margin: 30px 0;
+}
+
+.service_heading {
+    font-size: 2.2rem;
+    margin: 20px 0 50px 0;
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--bg-200);
+}
+
+.service_title {
+    font-size: 1.4rem;
+    margin-top: 30px;
+    font-weight: 600;
+    
+}
+
+.img_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+.main_image {
+    width: 340px;
+    height: auto;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.secondary_img {
+    width: 160px;
+    height: auto;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
 @media (min-width: 768px) {
     .main_img {
         height: 90vh;
@@ -32,5 +106,59 @@
         display: flex;
     }
 
+    .main_info {
+        align-items: none !important;
+    }
+
+    .service_article {
+        margin: 0 auto;
+    }
+
+    .service_article::after {
+        content: '';
+        position: absolute;
+        top: 77%;
+        left: 39%;
+        width: 500px;
+        height: 200px;
+        background-color: var(--bg-100);
+        border-radius: 20px;
+        z-index: -6;
+    }
+
+    .service_article::before {
+        content: '';
+        position: absolute;
+        top: -5%;
+        left: -6%;
+        width: 500px;
+        height: 200px;
+        background-color: var(--bg-100);
+        border-radius: 20px;
+        z-index: -6;
+    }
+
+    .img_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+        padding: 10px;
+    }
+
+    .main_image {
+        width: 61vw;
+        height: auto;
+        margin: 60px 0 30px 0;
+        border-radius: 20px;
+    }
+
+    .secondary_img {
+        width: 29vw;
+        height: auto;
+        margin: 15px;
+        border-radius: 20px;
+    }
 
 }

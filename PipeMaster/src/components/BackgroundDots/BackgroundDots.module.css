@@ -1,0 +1,11 @@
+.dots_bg {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #000 1px, transparent 2px);
+    background-size: 10px 10px;
+    opacity: 0.2;
+    z-index: -5;
+}

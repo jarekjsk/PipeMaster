@@ -11,11 +11,11 @@ export function Navbar() {
                 <img className={style.nav_img} src="/favicons/icon.webp" alt="ikona" />
                 <p className={style.nav_titel}>PipeMaster</p>
             </div>
-            <div className={style.nav_menu}>
+            <nav className={style.nav_menu}>
               <Link to={'/'}><Button name='O nas'/></Link>
               <Link to={'/service'}><Button name='Serwis'/></Link>
               <Link to={'/contact'}><Button name='Kontakt'/></Link>
-            </div>
+            </nav>
           </nav>  
 
         </>

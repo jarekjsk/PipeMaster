@@ -11,17 +11,7 @@
     position: relative;
 }
 
-.main_article::before {
-    content: '';
-    position: absolute;
-    top: 2%;
-    left: -8%;
-    width: 300px;
-    height: 200px;
-    background-color: var(--bg-100);
-    border-radius: 20px;
-    z-index: -6;
-}
+
 
 .border_none {
     border: none !important
@@ -31,7 +21,8 @@
     width: 90vw;
     height: auto;
     border-radius: 15px;
-
+    border: 10px solid var(--bg-100);
+    
 }
 
 
@@ -60,8 +51,23 @@
         max-width: 25vw;
     }
 
+    .main_article::before {
+        max-width: 27vw;
+        max-height: 16vw;
+        content: '';
+        position: absolute;
+        top: 2%;
+        left: -6%;
+        width: 300px;
+        height: 200px;
+        background-color: var(--bg-100);
+        border-radius: 20px;
+        z-index: -6;
+    }
+
     .main_article img {
         max-width: 26vw;
+        border: none;
     }
 
     .main_title {
